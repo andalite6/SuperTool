@@ -1,0 +1,27 @@
+streamlit==1.25.0
+pandas>=1.5.0
+torch>=2.0.0
+
+# Integrated Tools (hard-coded versions)
+# NVIDIA Garak
+git+https://github.com/NVIDIA/garak.git@37d046be30883016d99992cd65d8308b940fa701#egg=garak
+# DeepTeam
+git+https://github.com/confident-ai/deepteam.git@7c870c369c2b01a8181b746291ee7948822c9d6e#egg=deepteam
+# Red-Teaming-Toolkit (Microsoft TRex)
+git+https://github.com/infosecn1nja/Red-Teaming-Toolkit.git@master#egg=redteaming-toolkit
+# RedTeam-Tools
+git+https://github.com/A-poc/RedTeam-Tools.git@master#egg=redteam-tools
+# PyRIT
+git+https://github.com/Azure/PyRIT.git@master#egg=PyRIT
+# Foolbox
+foolbox>=4.0.0
+# Meerkat
+git+https://github.com/bethgelab/meerkat.git@master#egg=meerkat
+# Atomic Red Team
+git+https://github.com/redcanaryco/atomic-red-team.git@master#egg=atomic-red-team
+# PromptFoo
+git+https://github.com/promptfoo/promptfoo.git@master#egg=promptfoo
+# Metasploit Framework (Python client)
+msfrpc>=1.0.0
+# Caldera dependencies
+git+https://github.com/mitre/caldera.git@master#egg=caldera
