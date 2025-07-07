@@ -197,21 +197,3 @@ class CalderaAdapter:
     def attack(self, model, input_data):
         adv = self.service.adversary_svc.create_adversary(name="auto", description="via UI")
         return self.service.operation_svc.execute(adv.id)
-
-# File: requirements.txt
-streamlit
-pandas
-torch
-foolbox
-msfrpc
-# Plus external dependencies for: garak, deepteam, Red-Teaming-Toolkit, RedTeam-Tools, PyRIT, meerkat, atomic-red-team, promptfoo, caldera
-
-# Project structure:
-# super-red-team-tool/
-# ├── app.py
-# ├── orchestrator.py
-# ├── adapters/
-# ├── external/
-# ├── docs/
-# ├── requirements.txt
-# └── README.md
