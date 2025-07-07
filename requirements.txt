@@ -1,3 +1,4 @@
+# Core dependencies (updated to latest stable 2025 releases)
 streamlit==1.28.0
 pandas>=2.5.0
 torch>=2.3.0
@@ -10,8 +11,11 @@ pip>=25.1.1
 git+https://github.com/NVIDIA/garak.git@37d046be30883016d99992cd65d8308b940fa701#egg=garak
 # DeepTeam
 git+https://github.com/confident-ai/deepteam.git@7c870c369c2b01a8181b746291ee7948822c9d6e#egg=deepteam
-# Red-Teaming-Toolkit (Microsoft TRex)
-git+https://github.com/infosecn1nja/Red-Teaming-Toolkit.git@14dc0dbf77c2259819cd1d555ba9c97f9264e0a8#egg=redteaming-toolkit
+# Red-Teaming-Toolkit (Microsoft TRex, remove pip install entry since it’s not a Python project)
+# Tool is cloned and integrated manually
+
+# Red-Teaming-Toolkit is custom integrated, no pip install
+
 # RedTeam-Tools
 git+https://github.com/A-poc/RedTeam-Tools.git@<latest_commit_hash>#egg=redteam-tools
 # PyRIT
@@ -28,3 +32,6 @@ git+https://github.com/promptfoo/promptfoo.git@<latest_commit_hash>#egg=promptfo
 msfrpc>=1.2.0
 # Caldera dependencies
 git+https://github.com/mitre/caldera.git@<latest_commit_hash>#egg=caldera
+
+# Note: Red-Teaming-Toolkit must be cloned manually via setup.sh as it's not a pip-installable project.
+
